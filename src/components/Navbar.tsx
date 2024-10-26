@@ -11,7 +11,7 @@ export default function Navbar() {
             <Link to="/" className="flex items-center">
               <Cpu className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-xl font-bold text-gray-900">
-                EE Class of '99
+                Electronics Engineering Batch 1999
               </span>
             </Link>
           </div>
@@ -28,6 +28,9 @@ export default function Navbar() {
             >
               Directory
             </Link>
+            <button className=" inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                Login/SignUp
+              </button>
           </div>
         </div>
       </div>

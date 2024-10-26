@@ -36,7 +36,7 @@ export default function ProfilePage() {
         </Link>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <div className="relative h-48 sm:h-64">
+          <div className="relative h-70 sm:h-70">
             <img
               src={alumni.photo}
               alt={alumni.name}
@@ -93,34 +93,59 @@ export default function ProfilePage() {
 
               <div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                  Achievements
+                  Top Skills
                 </h2>
                 <ul className="space-y-3">
-                  {alumni.achievements.map((achievement, index) => (
+                  {alumni.topskills.map((topskills, index) => (
                     <li key={index} className="flex items-start">
                       <Award className="h-5 w-5 text-yellow-500 mr-2 mt-1" />
-                      <span>{achievement}</span>
+                      <span>{topskills}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
-
-            <div className="mt-8">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                Professional Experience
-              </h2>
-              <div className="space-y-4">
-                {alumni.experience.map((exp, index) => (
-                  <div key={index} className="flex items-start">
+              
+              <div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  Professional Experience
+                </h2>
+                <div className="space-y-4">
+                  {alumni.experience.map((exp, index) => (
+                    <div key={index} className="flex items-start">
+                      <Building className="h-5 w-5 text-gray-400 mr-2 mt-1" />
+                      <div>
+                        <h3 className="font-medium text-gray-900">{exp.role}</h3>
+                        <p className="text-gray-600">{exp.company}</p>
+                        <p className="text-sm text-gray-500">{exp.duration}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  Education
+                </h2>
+                <div className="space-y-3">
+                  <div className="flex items-center">
                     <Building className="h-5 w-5 text-gray-400 mr-2 mt-1" />
                     <div>
-                      <h3 className="font-medium text-gray-900">{exp.role}</h3>
-                      <p className="text-gray-600">{exp.company}</p>
-                      <p className="text-sm text-gray-500">{exp.duration}</p>
+                      <p className="text-sm text-gray-500">{alumni.Education}</p>
                     </div>
                   </div>
-                ))}
+                  <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                  Higher Education
+                </h2>
+                  {alumni.HigherEducation && (
+                    <div className="flex items-center">
+                      <Building className="h-5 w-5 text-gray-400 mr-2 mt-1" />
+                      <div>
+                        <p className="text-sm text-gray-500">{alumni.HigherEducation}</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>

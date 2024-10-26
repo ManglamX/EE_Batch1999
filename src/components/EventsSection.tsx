@@ -4,15 +4,15 @@ import { Calendar, MapPin, Users } from 'lucide-react';
 const upcomingEvents = [
   {
     id: 1,
-    title: '25th Anniversary Reunion',
-    date: 'June 15, 2024',
-    location: 'Grand Hyatt, San Francisco',
+    title: 'Alumni Reunion',
+    date: 'Januaury , 2024',
+    location: 'Fr.CRCE, Mumbai, Maharashtra',
     attendees: 120
   },
   {
     id: 2,
     title: 'Tech Innovation Summit',
-    date: 'July 22, 2024',
+    date: 'december 22, 2024',
     location: 'Virtual Event',
     attendees: 250
   }

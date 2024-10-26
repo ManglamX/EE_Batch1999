@@ -17,11 +17,14 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Electronics Engineering Class of 1999
+            Fr.Conceicao Rodrigues College of Engineering
+           <p className='mt-4'> Electronics Engineering Batch of 1999</p>
+
           </h1>
           <p className="text-xl text-gray-600">
             Connecting pioneers in technology for over two decades
           </p>
+          
         </div>
 
         <div className="flex justify-center mb-12">
