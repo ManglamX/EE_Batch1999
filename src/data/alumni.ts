@@ -146,6 +146,11 @@ export const alumniData: Alumni[] = [
         role: 'Senior Associate',
         company: 'KPMG LLP',
         duration: '2010-2012'
+      },
+      {
+        role: 'Assistant Manager',
+        company: 'Oracle Financial Services Software Limited',
+        duration: '2004-2006'
       }
     ],
     featured: true

@@ -28,9 +28,20 @@ export default function Navbar() {
             >
               Directory
             </Link>
-            <button className=" inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
-                Login/SignUp
-              </button>
+            <div className="flex space-x-2">
+              <Link
+                to="/login"
+                className="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+              >
+                Login
+              </Link>
+              <Link
+                to="/signup"
+                className="inline-flex items-center px-3 py-2 border border-blue-600 text-sm font-medium rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Sign Up
+              </Link>
+            </div>
           </div>
         </div>
       </div>

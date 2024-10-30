@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Calendar, MapPin, Users } from 'lucide-react';
+import EventRegistrationModal from './EventRegistrationModal';
 
 const upcomingEvents = [
   {
@@ -19,6 +20,14 @@ const upcomingEvents = [
 ];
 
 export default function EventsSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedEvent, setSelectedEvent] = useState<typeof upcomingEvents[0] | null>(null);
+
+  const handleRegister = (event: typeof upcomingEvents[0]) => {
+    setSelectedEvent(event);
+    setIsModalOpen(true);
+  };
+
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,13 +55,22 @@ export default function EventsSection() {
                   <span>{event.attendees} Attending</span>
                 </div>
               </div>
-              <button className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+              <button 
+                onClick={() => handleRegister(event)}
+                className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+              >
                 Register Now
               </button>
             </div>
           ))}
         </div>
       </div>
+
+      <EventRegistrationModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        event={selectedEvent}
+      />
     </section>
   );
 }
