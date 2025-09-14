@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Cpu } from 'lucide-react';
 
@@ -48,3 +47,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+

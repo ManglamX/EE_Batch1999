@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { alumniData } from '../data/alumni';
 import SearchBar from '../components/SearchBar';
 import AlumniCard from '../components/AlumniCard';
@@ -28,3 +28,5 @@ export default function DirectoryPage() {
     </div>
   );
 }
+
+

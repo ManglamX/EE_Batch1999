@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Calendar, MapPin, Users } from 'lucide-react';
 import EventRegistrationModal from './EventRegistrationModal';
 
@@ -74,3 +74,5 @@ export default function EventsSection() {
     </section>
   );
 }
+
+

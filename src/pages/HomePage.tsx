@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { alumniData } from '../data/alumni';
 import SearchBar from '../components/SearchBar';
 import FeaturedAlumni from '../components/FeaturedAlumni';
@@ -50,3 +50,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+

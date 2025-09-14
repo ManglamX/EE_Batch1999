@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, MapPin, Mail, Phone, Linkedin, Award, Building } from 'lucide-react';
 import { alumniData } from '../data/alumni';
@@ -154,3 +153,5 @@ export default function ProfilePage() {
     </div>
   );
 }
+
+

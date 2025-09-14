@@ -4,7 +4,7 @@
     "lib": ["ES2023"],
     "skipLibCheck": true,
     "composite": true,
-    "module": "CommonJS",
+    "module": "es2015",
     "types": ["node"],
     /* Bundler mode */
     "moduleResolution": "bundler",

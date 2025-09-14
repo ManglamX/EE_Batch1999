@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { X } from 'lucide-react';
 
 interface Event {
@@ -210,3 +210,5 @@ export default function EventRegistrationModal({
     </div>
   );
 }
+
+

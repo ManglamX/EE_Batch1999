@@ -1,4 +1,3 @@
-import React from 'react';
 import { Search } from 'lucide-react';
 
 interface SearchBarProps {
@@ -22,3 +21,5 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
     </div>
   );
 }
+
+

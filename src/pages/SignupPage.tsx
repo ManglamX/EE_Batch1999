@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Lock, User, AlertCircle } from 'lucide-react';
 
@@ -183,7 +183,7 @@ export default function SignupPage() {
                   className={`appearance-none block w-full pl-10 px-3 py-2 border ${
                     errors.password ? 'border-red-300' : 'border-gray-300'
                   } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
-                  placeholder="••••••••"
+                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
                 />
               </div>
               {errors.password && (
@@ -209,7 +209,7 @@ export default function SignupPage() {
                   className={`appearance-none block w-full pl-10 px-3 py-2 border ${
                     errors.confirmPassword ? 'border-red-300' : 'border-gray-300'
                   } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm`}
-                  placeholder="••••••••"
+                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
                 />
               </div>
               {errors.confirmPassword && (
@@ -230,3 +230,5 @@ export default function SignupPage() {
     </div>
   );
 }
+
+

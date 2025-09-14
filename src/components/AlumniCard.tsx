@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, Briefcase, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Alumni } from '../data/alumni';
@@ -38,3 +37,5 @@ export default function AlumniCard({ alumni }: AlumniCardProps) {
     </div>
   );
 }
+
+
