@@ -7,8 +7,10 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 
 function App() {
+  // Use Vite's base url so client-side routing works when served from a subpath
+  const basename = import.meta.env.BASE_URL || '/';
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="min-h-screen bg-gray-100">
         <Navbar />
         <Routes>
