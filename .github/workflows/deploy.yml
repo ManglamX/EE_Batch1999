@@ -5,6 +5,14 @@ on:
     branches:
       - main
 
+# The workflow needs explicit permissions to update repository contents/pages
+# since GITHUB_TOKEN defaults to read-only for some scopes. Grant write access
+# needed by the deploy action.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     name: Deploy
